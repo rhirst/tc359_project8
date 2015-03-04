@@ -21,7 +21,7 @@ module MethodsPracticeHelpers
     # Time.now.strftime is a great method chain you can use for this purpose.
     # See how to use it at: http://apidock.com/ruby/Time/strftime
     time = Time.now
-    out_time = time.strftime("%B %d, %Y")
+    time.strftime("%B %-d, %Y at%l:%M%P")
   end
 
   # ------------------------------------------
