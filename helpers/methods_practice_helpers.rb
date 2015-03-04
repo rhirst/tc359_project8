@@ -13,7 +13,11 @@ module MethodsPracticeHelpers
     # to remember all HTML needed to do it right). It should show the message in
     # the "message" variable and should have a class appropriate for the "type"
     # that is passed in, defaulting to 'info' if no type is passed in.
-    alert = "<div class='alert alert-#{type}>#{message}</div>"
+    alert = "<div class='alert alert-#{type} alert-dismissible' role='alert'>#{message}
+      <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+        <span aria-hidden='true'>&times;</span>
+      </button>
+    </div>"
   end
 
   def current_date_and_time
